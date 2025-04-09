@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-
+import NumberGuessingGame from './NumberGuessing';
 function App() {
   const hasRun = useRef(false);
 
@@ -31,7 +31,12 @@ function App() {
     
   }, []);
 
-  return <></>
+  return (
+    <>
+      <NumberGuessingGame />
+    </>
+  );
+  
 }
 
 export default App;
